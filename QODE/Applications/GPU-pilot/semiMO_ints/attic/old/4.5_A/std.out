@@ -1,0 +1,12 @@
+psi4_energy of Be chain    =  -29.133804293495537
+Nonorthogonal energy       =  -29.133804293495835
+Biorthogonal energy AO     =  -29.133804293495807
+Biorthogonal energy semiMO =  -29.1338042934958
+Biorthogonal energy semiMO = (-29.133804293495803-1.992807525928215e-18j) (true biorthogonal UHF)
+   => Loading Basis Set <=
+
+    Name: 6-31G
+    Role: ORBITAL
+    Keyword: None
+    atoms 1-2 entry BE         line    57 file /home/adutoi/programs/miniconda3/envs/Psi4/share/psi4/basis/6-31g.gbs 
+

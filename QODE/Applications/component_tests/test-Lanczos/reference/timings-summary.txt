@@ -1,0 +1,39 @@
+#    (C) Copyright 2018 Anthony D. Dutoi
+# 
+#    This file is part of Qode.
+# 
+#    Qode is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+# 
+#    Qode is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+# 
+#    You should have received a copy of the GNU General Public License
+#    along with Qode.  If not, see <http://www.gnu.org/licenses/>.
+#
+dim    = 10000		# The dimensionality of the random matrix
+psize  = 50		# The projection size
+matrix build:          1.2503414154052734 min
+
+Lowest eigenvalues from full diagonalization:  [0.89867124617614003, 1.9142491659805065, 3.0104428053367518, 3.969298927469747, 4.9014046045927806]
+full diagonalization:  45.76588445901871 min
+
+
+thresh = 1e-2		# The convergence threshold in terms of energy error
+
+Lowest eigenvalues from Lanczos extraction:    (0.89867541532161332, 1.9142568728794047, 3.010465302295469, 3.969374224971554, 4.9038342067058016)
+lanczos extraction:    1.507805315653483 min
+
+thresh = 1e-3		# The convergence threshold in terms of energy error
+
+Lowest eigenvalues from Lanczos extraction:    (0.89867124848752555, 1.9142491836530886, 3.0104428769660889, 3.9693009361587945, 4.9016693628750803)
+lanczos extraction:    3.018496310710907 min
+
+thresh = 1e-6		# The convergence threshold in terms of energy error
+
+Lowest eigenvalues from Lanczos extraction:    (0.89867124617624183, 1.9142491659860388, 3.0104428053504408, 3.9692989275178618, 4.9014050721241489)
+lanczos extraction:    7.548455270131429 min

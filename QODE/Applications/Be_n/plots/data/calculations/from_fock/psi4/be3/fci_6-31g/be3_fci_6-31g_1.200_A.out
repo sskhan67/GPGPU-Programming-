@@ -1,0 +1,490 @@
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                              Psi4 1.0.0 Driver
+
+                          Git: Rev {master} 6a9a71b dirty
+
+    J. M. Turney, A. C. Simmonett, R. M. Parrish, E. G. Hohenstein,
+    F. A. Evangelista, J. T. Fermann, B. J. Mintz, L. A. Burns, J. J. Wilke,
+    M. L. Abrams, N. J. Russ, M. L. Leininger, C. L. Janssen, E. T. Seidl,
+    W. D. Allen, H. F. Schaefer, R. A. King, E. F. Valeev, C. D. Sherrill,
+    and T. D. Crawford, WIREs Comput. Mol. Sci. 2, 556-565 (2012)
+    (doi: 10.1002/wcms.93)
+
+                         Additional Contributions by
+    A. E. DePrince, U. Bozkaya, A. Yu. Sokolov, D. G. A. Smith, R. Di Remigio,
+    R. M. Richard, J. F. Gonthier, H. R. McAlexander, M. Saitow, and
+    B. P. Pritchard
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Fri Jul 28 09:55:28 2017
+
+    Process ID:  12145
+    PSI4DATADIR: /home/yhliu/psi4conda/share/psi4
+    Memory level set to 256.000 MB
+
+  ==> Input File <==
+
+--------------------------------------------------------------------------
+
+memory 10 Gb
+molecule be2 {
+0 1
+Be  0.0  0.0  0.0
+Be  0.0  0.0  1.200 
+Be  0.0  0.0  2.400 
+units angstrom    
+}
+
+set basis 6-31g
+set freeze_core true
+set PRINT_BASIS True
+set PUREAM False
+set E_CONVERGENCE 1e-14
+energy('fci')
+--------------------------------------------------------------------------
+/home/yhliu/psi4conda/lib/python2.7/site-packages/v2rdm_casscf/v2rdm_casscf.so loaded.
+
+  Memory set to  10.000 GiB by Python script.
+
+*** tstart() called on compute-0-1.local
+*** at Fri Jul 28 09:55:28 2017
+
+
+         ---------------------------------------------------------
+                                   SCF
+            by Justin Turney, Rob Parrish, and Andy Simmonett
+                              RHF Reference
+                        1 Threads,  10000 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: d2h
+    Full point group: D_inf_h
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+          BE          0.000000000000     0.000000000000    -1.200000000000     9.012182201000
+          BE          0.000000000000     0.000000000000     0.000000000000     9.012182201000
+          BE          0.000000000000     0.000000000000     1.200000000000     9.012182201000
+
+  Running in d2h symmetry.
+
+  Rotational constants: A = ************  B =      0.64949  C =      0.64949 [cm^-1]
+  Rotational constants: A = ************  B =  19471.29089  C =  19471.29089 [MHz]
+  Nuclear repulsion =   17.639240286333340
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 12
+  Nalpha       = 6
+  Nbeta        = 6
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-14
+  Density threshold  = 1.00e-08
+  Integral threshold = 0.00e+00
+
+  ==> Primary Basis <==
+
+  Basis Set: 6-31G
+    Number of shells: 15
+    Number of basis function: 27
+    Number of Cartesian functions: 27
+    Spherical Harmonics?: false
+    Max angular momentum: 1
+
+  -AO BASIS SET INFORMATION:
+    Name                   = 6-31G
+    Total number of shells = 15
+    Number of primitives   = 42
+    Number of AO           = 27
+    Number of SO           = 27
+    Maximum AM             = 1
+    Spherical Harmonics    = FALSE
+
+  -Contraction Scheme:
+    Atom   Type   All Primitives // Shells:
+   ------ ------ --------------------------
+       1    BE     10s 4p // 3s 2p 
+       2    BE     10s 4p // 3s 2p 
+       3    BE     10s 4p // 3s 2p 
+
+  ==> AO Basis Functions <==
+
+    [ 6-31G ]
+    cartesian
+    ****
+   BE   1
+    S   6 1.00
+                      1264.58570000           0.00194480
+                       189.93681000           0.01483510
+                        43.15908900           0.07209060
+                        12.09866300           0.23715420
+                         3.80632320           0.46919870
+                         1.27289030           0.35652020
+    S   3 1.00
+                         3.19646310          -0.11264870
+                         0.74781330          -0.22950640
+                         0.21996630           1.18691670
+    P   3 1.00
+                         3.19646310           0.05598020
+                         0.74781330           0.26155060
+                         0.21996630           0.79397230
+    S   1 1.00
+                         0.08230990           1.00000000
+    P   1 1.00
+                         0.08230990           1.00000000
+    ****
+   BE   2
+    S   6 1.00
+                      1264.58570000           0.00194480
+                       189.93681000           0.01483510
+                        43.15908900           0.07209060
+                        12.09866300           0.23715420
+                         3.80632320           0.46919870
+                         1.27289030           0.35652020
+    S   3 1.00
+                         3.19646310          -0.11264870
+                         0.74781330          -0.22950640
+                         0.21996630           1.18691670
+    P   3 1.00
+                         3.19646310           0.05598020
+                         0.74781330           0.26155060
+                         0.21996630           0.79397230
+    S   1 1.00
+                         0.08230990           1.00000000
+    P   1 1.00
+                         0.08230990           1.00000000
+    ****
+
+  ==> Pre-Iterations <==
+
+   -------------------------------------------------------
+    Irrep   Nso     Nmo     Nalpha   Nbeta   Ndocc  Nsocc
+   -------------------------------------------------------
+     Ag         8       8       0       0       0       0
+     B1g        0       0       0       0       0       0
+     B2g        2       2       0       0       0       0
+     B3g        2       2       0       0       0       0
+     Au         0       0       0       0       0       0
+     B1u        7       7       0       0       0       0
+     B2u        4       4       0       0       0       0
+     B3u        4       4       0       0       0       0
+   -------------------------------------------------------
+    Total      27      27       6       6       6       0
+   -------------------------------------------------------
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                   3
+      Number of AO shells:              15
+      Number of primitives:             42
+      Number of atomic orbitals:        27
+      Number of basis functions:        27
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 1
+
+  Performing in-core PK
+  Using 143262 doubles for integral storage.
+  We computed 7259 shell quartets total.
+  Whereas there are 7260 unique shell quartets.
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory (MB):              7152
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              1
+  Minimum eigenvalue in the overlap matrix is 3.8271915464E-05.
+  Using Symmetric Orthogonalization.
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF.
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter   0:   -44.89888851597954   -4.48989e+01   1.94008e-01 
+   @RHF iter   1:   -43.13143739098704    1.76745e+00   5.95186e-03 
+   @RHF iter   2:   -43.13597723351400   -4.53984e-03   1.48382e-03 DIIS
+   @RHF iter   3:   -43.13666486086445   -6.87627e-04   5.00860e-04 DIIS
+   @RHF iter   4:   -43.13678171090643   -1.16850e-04   1.48550e-04 DIIS
+   @RHF iter   5:   -43.13679549953929   -1.37886e-05   5.13607e-05 DIIS
+   @RHF iter   6:   -43.13679682461164   -1.32507e-06   4.42867e-06 DIIS
+   @RHF iter   7:   -43.13679683136048   -6.74884e-09   5.39904e-07 DIIS
+   @RHF iter   8:   -43.13679683147368   -1.13197e-10   1.27186e-07 DIIS
+   @RHF iter   9:   -43.13679683148062   -6.94200e-12   1.09746e-08 DIIS
+   @RHF iter  10:   -43.13679683148078   -1.56319e-13   1.20236e-09 DIIS
+   @RHF iter  11:   -43.13679683148069    9.23706e-14   1.06869e-10 DIIS
+   @RHF iter  12:   -43.13679683148070   -1.42109e-14   9.74175e-12 DIIS
+   @RHF iter  13:   -43.13679683148067    2.84217e-14   1.81110e-12 DIIS
+   @RHF iter  14:   -43.13679683148076   -8.52651e-14   3.10708e-13 DIIS
+   @RHF iter  15:   -43.13679683148077   -7.10543e-15   1.46222e-13 DIIS
+
+  ==> Post-Iterations <==
+
+    Orbital Energies (a.u.)
+    -----------------------
+
+    Doubly Occupied:                                                      
+
+       1Ag    -4.763234     1B1u   -4.730750     2Ag    -4.705817  
+       3Ag    -0.454201     2B1u   -0.303101     1B3u   -0.284655  
+
+    Virtual:                                                              
+
+       1B2u   -0.018197     4Ag     0.050694     3B1u    0.096649  
+       1B2g    0.104965     1B3g    0.118539     2B3u    0.247738  
+       2B2u    0.251227     4B1u    0.282375     5Ag     0.311825  
+       3B2u    0.377323     6Ag     0.388946     3B3u    0.391815  
+       2B2g    0.450946     2B3g    0.451226     5B1u    0.521774  
+       7Ag     0.633445     6B1u    0.641612     4B2u    0.732787  
+       4B3u    0.738188     8Ag     2.194918     7B1u    2.382105  
+
+    Final Occupation by Irrep:
+             Ag   B1g   B2g   B3g    Au   B1u   B2u   B3u 
+    DOCC [     3,    0,    0,    0,    0,    2,    0,    1 ]
+
+  Energy converged.
+
+  @RHF Final Energy:   -43.13679683148077
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =             17.6392402863333402
+    One-Electron Energy =                 -91.0685588442005098
+    Two-Electron Energy =                  30.2925217263864042
+    DFT Exchange-Correlation Energy =       0.0000000000000000
+    Empirical Dispersion Energy =           0.0000000000000000
+    PCM Polarization Energy =               0.0000000000000000
+    EFP Energy =                            0.0000000000000000
+    Total Energy =                        -43.1367968314807584
+
+
+  Saving occupied orbitals to File 180.
+
+*** tstop() called on compute-0-1.local at Fri Jul 28 09:55:28 2017
+Module time:
+	user time   =       0.19 seconds =       0.00 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       0.19 seconds =       0.00 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 Bohr
+
+Properties computed using the SCF density matrix
+
+  Nuclear Dipole Moment: (a.u.)
+     X:     0.0000      Y:     0.0000      Z:     0.0000
+
+  Electronic Dipole Moment: (a.u.)
+     X:     0.0000      Y:     0.0000      Z:     0.0000
+
+  Dipole Moment: (a.u.)
+     X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
+
+  Dipole Moment: (Debye)
+     X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
+
+ MINTS: Wrapper to libmints.
+   by Justin Turney
+
+   Calculation information:
+      Number of atoms:                   3
+      Number of AO shells:              15
+      Number of SO shells:              10
+      Number of primitives:             42
+      Number of atomic orbitals:        27
+      Number of basis functions:        27
+
+      Number of irreps:                  8
+      Integral cutoff                 0.00e+00
+      Number of functions per irrep: [   8    0    2    2    0    7    4    4 ]
+
+ OEINTS: Overlap, kinetic, potential, dipole, and quadrupole integrals
+         stored in file 35.
+
+      Computing two-electron integrals...done
+      Computed 11211 non-zero two-electron integrals.
+        Stored in file 33.
+
+
+         ---------------------------------------------------------
+                                 D E T C I  
+
+                             C. David Sherrill
+                             Matt L. Leininger
+                               18 June 1999
+         ---------------------------------------------------------
+
+
+DETCI PARAMETERS: 
+   EX LEVEL      =        6      H0 BLOCKSIZE =     1000
+   VAL EX LEVEL  =        0      H0 GUESS SIZE=     1000
+   H0COUPLINGSIZE=        0      H0 COUPLING  =       no
+   MAXITER       =       24      NUM PRINT    =       20
+   NUM ROOTS     =        1      ICORE        =        1
+   PRINT         =        1      FCI          =      yes
+   R CONV        = 1.00e-04      MIXED        =      yes
+   E CONV        = 1.00e-14      MIXED4       =      yes
+   R4S           =       no      REPL OTF     =       no
+   DIAG METHOD   =      SEM
+   PRECONDITIONER= DAVIDSON      UPDATE       = DAVIDSON
+   S             =   0.0000      Ms0          =      yes
+   MAX NUM VECS  =       25
+   RESTART       =       no
+   GUESS VECTOR  =  H0BLOCK      OPENTYPE     =     NONE
+   REF SYM       =     auto
+   COLLAPSE SIZE =        1      HD AVG       = EVANGELISTI
+   LSE           =       no      LSE ITER     =        0
+   HD OTF        =      yes      NO DFILE     =       no
+   MPN           =       no      MPN SCHMIDT  =       no
+   ZAPTN         =       no      MPN WIGNER   =       no
+   PERT Z        =   1.0000      FOLLOW ROOT  =        0
+   NUM THREADS   =        1
+   FILTER GUESS  =       no      SF RESTRICT  =       no
+   OPDM          =       no      TRANS DENSITY=       no
+
+   FILES         =  50 51 52 53
+
+   EX ALLOW      =  1  1  1  1  1  1 
+   STATE AVERAGE =  1(1.00) 
+
+ORBITALS:
+   NMO          =       27
+   FROZEN CORE  =        3      RESTR CORE   =        0
+   FROZEN VIRT  =        0      RESTR VIRT   =        0
+   DROPPED CORE =        3      DROPPED VIRT =        0
+   EXPLICIT CORE=        0      ORBS IN CI   =       24
+   NUM ALP      =        6      NUM BET      =        6
+   NUM ALP EXPL =        3      NUM BET EXPL =        3
+   IOPEN        =       no
+
+   DOCC            =   3   0   0   0   0   2   0   1 
+   SOCC            =   0   0   0   0   0   0   0   0 
+
+   FROZEN DOCC     =   2   0   0   0   0   1   0   0 
+   RESTRICTED DOCC =   0   0   0   0   0   0   0   0 
+   ACTIVE          =   6   0   2   2   0   6   4   4 
+   RESTRICTED UOCC =   0   0   0   0   0   0   0   0 
+   FROZEN UOCC     =   0   0   0   0   0   0   0   0 
+         ---------------------------------------------------------
+
+
+   ==> Setting up CI strings <==
+
+   There are 2024 alpha and 2024 beta strings
+   The CI space requires 517872 (5.18E+05) determinants and 8 blocks
+
+
+   ==> Transforming CI integrals <==
+	Presorting SO-basis two-electron integrals.
+	Sorting File: SO Ints (nn|nn) nbuckets = 1
+	Transforming the one-electron integrals and constructing Fock matrices
+	Starting first half-transformation.
+	Sorting half-transformed integrals.
+	First half integral transformation complete.
+	Starting second half-transformation.
+	Two-electron integral transformation complete.
+
+*** H0 Block Eigenvalue = -43.24697736
+
+Find the roots by the Simultaneous Expansion Method (Block Davidson Method)
+Using 1 initial trial vectors
+Iter  0  Root  1 = -43.246977360   Delta_E -6.827E+00   Delta_C  1.952E-01  
+Iter  1  Root  1 = -43.272215895   Delta_E -2.524E-02   Delta_C  7.054E-02  
+Iter  2  Root  1 = -43.275507298   Delta_E -3.291E-03   Delta_C  4.210E-02  
+Iter  3  Root  1 = -43.276893462   Delta_E -1.386E-03   Delta_C  2.387E-02  
+Iter  4  Root  1 = -43.277604407   Delta_E -7.109E-04   Delta_C  2.305E-02  
+Iter  5  Root  1 = -43.278383096   Delta_E -7.787E-04   Delta_C  2.969E-02  
+Iter  6  Root  1 = -43.279461724   Delta_E -1.079E-03   Delta_C  3.478E-02  
+Iter  7  Root  1 = -43.280507964   Delta_E -1.046E-03   Delta_C  2.929E-02  
+Iter  8  Root  1 = -43.281097901   Delta_E -5.899E-04   Delta_C  1.969E-02  
+Iter  9  Root  1 = -43.281341197   Delta_E -2.433E-04   Delta_C  1.334E-02  
+Iter 10  Root  1 = -43.281472146   Delta_E -1.309E-04   Delta_C  1.097E-02  
+Iter 11  Root  1 = -43.281585654   Delta_E -1.135E-04   Delta_C  1.174E-02  
+Iter 12  Root  1 = -43.281710957   Delta_E -1.253E-04   Delta_C  1.205E-02  
+Iter 13  Root  1 = -43.281813468   Delta_E -1.025E-04   Delta_C  8.987E-03  
+Iter 14  Root  1 = -43.281856952   Delta_E -4.348E-05   Delta_C  4.981E-03  
+Iter 15  Root  1 = -43.281869141   Delta_E -1.219E-05   Delta_C  2.531E-03  
+Iter 16  Root  1 = -43.281872346   Delta_E -3.205E-06   Delta_C  1.347E-03  
+Iter 17  Root  1 = -43.281873291   Delta_E -9.451E-07   Delta_C  7.350E-04  
+Iter 18  Root  1 = -43.281873568   Delta_E -2.774E-07   Delta_C  3.821E-04  
+Iter 19  Root  1 = -43.281873642   Delta_E -7.336E-08   Delta_C  1.966E-04  
+Iter 20  Root  1 = -43.281873660   Delta_E -1.807E-08   Delta_C  9.960E-05  
+Iter 21  Root  1 = -43.281873664   Delta_E -4.565E-09   Delta_C  5.047E-05  
+Iter 22  Root  1 = -43.281873665   Delta_E -1.193E-09   Delta_C  2.584E-05  
+Iter 23  Root  1 = -43.281873666   Delta_E -3.195E-10   Delta_C  1.364E-05  
+Iter 24  Root  1 = -43.281873666   Delta_E -9.260E-11   Delta_C  7.986E-06  
+
+Maximum number of CI iterations reached
+
+* ROOT 1 CI total energy = -43.2818736657982
+
+
+The 20 most important determinants
+
+    1    0.523628  ( 1762, 1762)  3AgX  2B1uX  1B3uX  
+    2    0.512061  ( 1562, 1562)  3AgX  2B1uX  1B2uX  
+    3   -0.498706  ( 1030, 1030)  3AgX  1B3uX  1B2uX  
+    4   -0.097742  (  326,  326)  2B1uX  1B3uX  1B2uX  
+    5    0.089698  (  326,  327)  3AgB  2B1uA  1B3uA  1B2gB  1B2uX  
+    6    0.089698  (  327,  326)  3AgA  2B1uB  1B3uB  1B2gA  1B2uX  
+    7    0.088273  (  290,  326)  3AgA  2B1uB  1B3uX  1B3gA  1B2uB  
+    8    0.088273  (  326,  290)  3AgB  2B1uA  1B3uX  1B3gB  1B2uA  
+    9   -0.077435  ( 1030, 1066)  3AgX  1B3uX  1B2uA  3B2uB  
+   10   -0.077435  ( 1066, 1030)  3AgX  1B3uX  1B2uB  3B2uA  
+   11   -0.059289  (  521,  521)  3AgX  2B1uX  1B2gX  
+   12    0.057517  ( 1562, 1640)  3AgX  2B1uX  1B2uA  3B2uB  
+   13    0.057517  ( 1640, 1562)  3AgX  2B1uX  1B2uB  3B2uA  
+   14   -0.056380  (  750,  750)  3AgX  2B1uX  1B3gX  
+   15    0.055908  ( 1562, 1600)  3AgX  2B1uX  1B2uA  2B2uB  
+   16    0.055908  ( 1600, 1562)  3AgX  2B1uX  1B2uB  2B2uA  
+   17    0.050582  ( 1030, 1036)  3AgA  2B1uB  1B3uA  1B2gB  1B2uX  
+   18    0.050582  ( 1036, 1030)  3AgB  2B1uA  1B3uB  1B2gA  1B2uX  
+   19    0.049771  (  994, 1030)  3AgB  2B1uA  1B3uX  1B3gA  1B2uB  
+   20    0.049771  ( 1030,  994)  3AgA  2B1uB  1B3uX  1B3gB  1B2uA  
+
+
+An error has occurred python-side. Traceback (most recent call last):
+
+  File "<string>", line 39, in <module>
+
+  File "/home/yhliu/psi4conda/share/psi4/python/driver.py", line 446, in energy
+    wfn = procedures['energy'][lowername](lowername, molecule=molecule, **kwargs)
+
+  File "/home/yhliu/psi4conda/share/psi4/python/procedures/proc.py", line 2595, in run_detci
+    ci_wfn = psi4.detci(ref_wfn)
+
+RuntimeError: 
+Fatal Error: CIWavefunction: Iterations did not converge!
+Error occurred in file: /scratch/cdsgroup/conda-builds/work/src/bin/detci/ciwave.cc on line: 364
+The most recent 5 function calls were:
+
+psi::PsiException::PsiException(std::string, char const*, int)
+psi::detci::CIWavefunction::convergence_death()
+psi::detci::CIWavefunction::diag_h()
+psi::detci::CIWavefunction::compute_energy()
+psi::detci::detci(boost::shared_ptr<psi::Wavefunction>, psi::Options&)
+
+
+

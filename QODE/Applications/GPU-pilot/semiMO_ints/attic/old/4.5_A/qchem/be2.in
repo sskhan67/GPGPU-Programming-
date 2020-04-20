@@ -1,0 +1,10 @@
+$molecule
+0 1
+Be1
+Be2 Be1 4.5
+$end
+
+$rem
+method = hf
+basis = 6-31g
+$end

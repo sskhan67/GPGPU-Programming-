@@ -1,0 +1,24 @@
+## Serial Code 
+We have adapted the Chemistry code from Dr. Anthony D. Dutoi, Assistant Professor of Chemistry, University of the Pacific
+The serial code copyright belongs to Dr. Anthony D. Dutoi and for quieries regarding serial code: Anthony D. Dutoi (adutoi@pacific.edu) 
+
+
+
+## GPU Implementation 
+
+GPU implementation files are located on folder: qode_update_gpu/Applications/GPU-pilot
+Challenges: The application is memory intensive ( arithmetic intensity = -0.4615). CudaMemcpy takes almost 50% of parallel execution time. The required data for kernel calculation approximately 16GB which is limted by memory. The pinned menory options cannot be applied which will be reduced it overall system performance. Now, we wre trying to divides data block between our 4 GPU. 
+
+Our project goals:
+
+	1. Profile using state of art profiler Contribution:
+			identify state of the profiler
+			profile and tell which section will paralyze
+			
+	2. Implementation pyramid for GPU based + CPU using OpenMP
+	3. Initially, we will start implementating naive kernel and L2 cached shared kernel implementation. 
+	4. Further optimization will be made using Multi-GPU implementation, instruction level optimization, possibility to apply pinned memory along CUDA streams
+	
+
+
+

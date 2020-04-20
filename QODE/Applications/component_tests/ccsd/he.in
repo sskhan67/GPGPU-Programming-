@@ -1,0 +1,18 @@
+$molecule
+0 1
+He  0.0  0.0  0.0
+$end
+
+$rem
+exchange   hf
+basis      6-31g-uncontracted
+$end
+
+$comment
+# Helium Atom:
+# SCF energy in the final basis set = -2.8551604262  Hartree (Qchem4.4)
+# MP2 energy                        = -2.86814954    Hartree (Qchem4.4)
+# CCSD total energy                 = -2.87178917    Hartree (Qchem4.4)
+#
+# PSI4 CISD energy                  = -2.8717891505016
+$end

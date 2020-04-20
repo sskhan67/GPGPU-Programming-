@@ -1,0 +1,67 @@
+    Molecular point group: d2h
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+          BE          0.000000000000     0.000000000000     0.000000000000     9.012182201000
+
+    Molecular point group: d2h
+    Full point group: D_inf_h
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+          BE          0.000000000000     0.000000000000    -1.300000000000     9.012182201000
+          BE          0.000000000000     0.000000000000     1.300000000000     9.012182201000
+
+   => Loading Basis Set <=
+
+    Name: 6-31G
+    Role: ORBITAL
+    Keyword: None
+    atoms 1 entry BE         line    53 file /home/boris/miniconda/envs/sss/share/psi4/basis/6-31g.gbs 
+
+  Basis Set: 6-31G
+    Blend: 6-31G
+    Number of shells: 5
+    Number of basis function: 9
+    Number of Cartesian functions: 9
+    Spherical Harmonics?: false
+    Max angular momentum: 1
+
+   => Loading Basis Set <=
+
+    Name: 6-31G
+    Role: ORBITAL
+    Keyword: None
+    atoms 1-2 entry BE         line    53 file /home/boris/miniconda/envs/sss/share/psi4/basis/6-31g.gbs 
+
+  Basis Set: 6-31G
+    Blend: 6-31G
+    Number of shells: 10
+    Number of basis function: 18
+    Number of Cartesian functions: 18
+    Spherical Harmonics?: false
+    Max angular momentum: 1
+
+18 number of basis functions
+Orthonormal SCF has finished!
+
+Orthonormal SCF has finished!
+
+(18, 18) shape of C
+Iter=  0  E = -29.124491109383  E_diff = -2.9124e+01  D_diff =  2.7240e-01
+Iter=  1  E = -29.124491109539  E_diff = -1.5524e-10  D_diff =  2.7240e-01
+SCF has finished!
+
+(18, 18) shape of C
+Iter=  0  E = -29.124491109383  E_diff = -2.9124e+01  D_diff =  2.7240e-01
+Iter=  1  E = -29.124491109539  E_diff = -1.5525e-10  D_diff =  2.7240e-01
+SCF has finished!
+
+psi4_energy of Be chain    = -29.124491109569654
+Orthogonal energy          = -29.1244915865
+Biorthogonal energy AO     = -29.1244911095
+Biorthogonal energy semiMO = -29.1244911095
+Energy matches Psi4 True

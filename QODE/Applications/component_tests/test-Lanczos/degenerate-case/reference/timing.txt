@@ -1,0 +1,272 @@
+#    (C) Copyright 2018 Anthony D. Dutoi
+# 
+#    This file is part of Qode.
+# 
+#    Qode is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+# 
+#    Qode is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+# 
+#    You should have received a copy of the GNU General Public License
+#    along with Qode.  If not, see <http://www.gnu.org/licenses/>.
+#
+Wed May 17 15:37:24 2017    input-output//timing.pstats
+
+         1051605 function calls (1048264 primitive calls) in 2.317 seconds
+
+   Ordered by: cumulative time, internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      3/1    0.000    0.000    2.317    2.317 {built-in method exec}
+        1    0.000    0.000    2.317    2.317 <string>:1(<module>)
+        1    0.000    0.000    2.317    2.317 testLanczos.py:41(main)
+        1    0.000    0.000    2.287    2.287 testLanczos.py:31(experiment)
+        1    0.003    0.003    2.287    2.287 lanczos.py:190(lowest_eigen)
+        5    0.006    0.001    2.053    0.411 lanczos.py:128(projection)
+      500    0.002    0.000    2.028    0.004 lanczos.py:77(_iteration)
+      500    0.393    0.001    1.979    0.004 lanczos.py:9(_process_new_vec)
+    51900    0.106    0.000    0.677    0.000 space.py:98(__mul__)
+    44975    0.046    0.000    0.451    0.000 space.py:81(__isub__)
+    45600    0.053    0.000    0.428    0.000 space.py:300(add_to)
+38600/36900    0.073    0.000    0.405    0.000 space.py:57(__or__)
+    45600    0.375    0.000    0.375    0.000 numpy_space.py:33(add_to)
+    47350    0.041    0.000    0.293    0.000 space.py:303(scale)
+    46950    0.093    0.000    0.269    0.000 space.py:305(copy)
+    36850    0.057    0.000    0.266    0.000 space.py:291(dot)
+    47350    0.252    0.000    0.252    0.000 numpy_space.py:37(scale)
+    36850    0.038    0.000    0.201    0.000 numpy_space.py:30(dot)
+    10225    0.020    0.000    0.182    0.000 space.py:108(__rmul__)
+    37350    0.181    0.000    0.181    0.000 {built-in method dot}
+    46950    0.028    0.000    0.128    0.000 numpy_space.py:40(copy)
+    41801    0.056    0.000    0.126    0.000 abc.py:611(__iter__)
+       55    0.017    0.000    0.125    0.002 vector_set.py:91(deproject)
+        5    0.000    0.000    0.124    0.025 lanczos.py:234(<listcomp>)
+   226577    0.118    0.000    0.118    0.000 {built-in method isinstance}
+    46950    0.100    0.000    0.100    0.000 {method 'copy' of 'numpy.ndarray' objects}
+    57900    0.054    0.000    0.098    0.000 vector_set.py:38(__getitem__)
+        6    0.000    0.000    0.055    0.009 linalg.py:1070(eigh)
+       12    0.053    0.004    0.053    0.004 {built-in method dsyevd}
+    47460    0.049    0.000    0.049    0.000 space.py:53(__init__)
+      505    0.001    0.000    0.045    0.000 space.py:162(__or__)
+      500    0.003    0.000    0.043    0.000 space.py:307(act_on_vec)
+      500    0.001    0.000    0.040    0.000 numpy_space.py:47(act_on_vec)
+        5    0.000    0.000    0.033    0.007 vector_set.py:98(projection_opr)
+        5    0.002    0.000    0.032    0.006 vector_set.py:78(project)
+     6450    0.006    0.000    0.030    0.000 space.py:68(__iadd__)
+        5    0.000    0.000    0.030    0.006 lanczos.py:238(<listcomp>)
+  1100/50    0.005    0.000    0.029    0.001 space.py:331(back_act_on_vec)
+        1    0.000    0.000    0.025    0.025 testLanczos.py:22(control)
+     9950    0.008    0.000    0.022    0.000 space.py:251(conjugate)
+    36850    0.021    0.000    0.021    0.000 {method 'conj' of 'numpy.ndarray' objects}
+       50    0.000    0.000    0.012    0.000 vector_set.py:74(projections)
+       50    0.001    0.000    0.012    0.000 vector_set.py:77(<listcomp>)
+    10600    0.007    0.000    0.011    0.000 field_traits.py:25(conjugate)
+     1050    0.001    0.000    0.010    0.000 space.py:115(__itruediv__)
+       10    0.000    0.000    0.010    0.001 defmatrix.py:233(__new__)
+       32    0.010    0.000    0.010    0.000 {built-in method array}
+     5000    0.006    0.000    0.009    0.000 space.py:63(__ror__)
+     1050    0.001    0.000    0.009    0.000 space.py:94(__imul__)
+     2200    0.003    0.000    0.008    0.000 space.py:246(abs)
+        5    0.002    0.000    0.007    0.001 vector_set.py:53(overlaps)
+      550    0.001    0.000    0.007    0.000 space.py:72(__add__)
+      500    0.000    0.000    0.005    0.000 abc.py:723(__iadd__)
+        1    0.000    0.000    0.005    0.005 testLanczos.py:8(io_setup)
+        1    0.000    0.000    0.004    0.004 npyio.py:275(load)
+     1050    0.001    0.000    0.004    0.000 space.py:256(sqrt)
+     2200    0.002    0.000    0.004    0.000 field_traits.py:15(abs)
+      500    0.001    0.000    0.004    0.000 abc.py:704(extend)
+      500    0.001    0.000    0.004    0.000 abc.py:686(append)
+      5/3    0.000    0.000    0.003    0.001 <frozen importlib._bootstrap>:1559(_find_and_load)
+      5/3    0.000    0.000    0.003    0.001 <frozen importlib._bootstrap>:1509(_find_and_load_unlocked)
+     1050    0.001    0.000    0.003    0.000 field_traits.py:36(sqrt)
+        1    0.000    0.000    0.002    0.002 format.py:415(read_array)
+     11/2    0.000    0.000    0.002    0.001 <frozen importlib._bootstrap>:581(_check_name_wrapper)
+        2    0.000    0.000    0.002    0.001 <frozen importlib._bootstrap>:1019(load_module)
+        2    0.000    0.000    0.002    0.001 <frozen importlib._bootstrap>:997(load_module)
+        2    0.000    0.000    0.002    0.001 <frozen importlib._bootstrap>:536(module_for_loader_wrapper)
+        2    0.000    0.000    0.002    0.001 <frozen importlib._bootstrap>:850(_load_module)
+        1    0.000    0.000    0.002    0.002 format.py:288(read_array_header_1_0)
+2756/2191    0.001    0.000    0.002    0.000 {built-in method len}
+      500    0.001    0.000    0.002    0.000 vector_set.py:49(insert)
+        1    0.000    0.000    0.002    0.002 utils.py:1096(safe_eval)
+        5    0.000    0.000    0.002    0.000 <frozen importlib._bootstrap>:1473(_find_module)
+        4    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:1305(find_module)
+        4    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:1278(_get_loader)
+       25    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:1352(find_loader)
+      4/2    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap>:305(_call_with_frames_removed)
+       10    0.000    0.000    0.001    0.000 defmatrix.py:389(tolist)
+       10    0.001    0.000    0.001    0.000 {method 'tolist' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.001    0.001 gzip.py:4(<module>)
+     1050    0.001    0.000    0.001    0.000 {built-in method sqrt}
+     2240    0.001    0.000    0.001    0.000 {built-in method abs}
+      225    0.001    0.000    0.001    0.000 defmatrix.py:301(__getitem__)
+        5    0.000    0.000    0.001    0.000 linalg.py:404(inv)
+       34    0.001    0.000    0.001    0.000 {built-in method zeros}
+        2    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:935(get_code)
+      100    0.000    0.000    0.001    0.000 space.py:77(__radd__)
+      570    0.000    0.000    0.001    0.000 vector_set.py:47(__len__)
+       11    0.000    0.000    0.001    0.000 linalg.py:139(_fastCopyAndTranspose)
+      501    0.001    0.000    0.001    0.000 {method 'insert' of 'list' objects}
+       16    0.001    0.000    0.001    0.000 {built-in method _fastCopyAndTranspose}
+        5    0.000    0.000    0.001    0.000 linalg.py:244(solve)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:496(set_package_wrapper)
+        1    0.000    0.000    0.000    0.000 {built-in method fromfile}
+       17    0.000    0.000    0.000    0.000 {method 'astype' of 'numpy.ndarray' objects}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:509(set_loader_wrapper)
+      123    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:74(_path_join)
+        2    0.000    0.000    0.000    0.000 {built-in method loads}
+        6    0.000    0.000    0.000    0.000 {built-in method sorted}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1126(load_module)
+       30    0.000    0.000    0.000    0.000 {built-in method stat}
+      126    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 ast.py:26(<module>)
+       55    0.000    0.000    0.000    0.000 space.py:171(__add__)
+       45    0.000    0.000    0.000    0.000 space.py:179(__iadd__)
+        4    0.000    0.000    0.000    0.000 {built-in method __build_class__}
+       61    0.000    0.000    0.000    0.000 vector_set.py:31(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method load_dynamic}
+        5    0.000    0.000    0.000    0.000 {built-in method dgesv}
+       11    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x7d7b80}
+       60    0.000    0.000    0.000    0.000 space.py:190(__init__)
+       21    0.000    0.000    0.000    0.000 linalg.py:66(_makearray)
+        1    0.000    0.000    0.000    0.000 fromnumeric.py:1643(all)
+        2    0.000    0.000    0.000    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+        5    0.000    0.000    0.000    0.000 numeric.py:1885(identity)
+        1    0.000    0.000    0.000    0.000 testLanczos.py:12(<listcomp>)
+        1    0.000    0.000    0.000    0.000 {method 'all' of 'numpy.ndarray' objects}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1031(get_data)
+       11    0.000    0.000    0.000    0.000 linalg.py:99(_commonType)
+       21    0.000    0.000    0.000    0.000 numeric.py:253(asarray)
+        1    0.000    0.000    0.000    0.000 abc.py:129(__new__)
+       50    0.000    0.000    0.000    0.000 space.py:202(__init__)
+        1    0.000    0.000    0.000    0.000 _methods.py:28(_all)
+       10    0.000    0.000    0.000    0.000 {method 'random_sample' of 'mtrand.RandomState' objects}
+        5    0.000    0.000    0.000    0.000 twodim_base.py:169(eye)
+      516    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+      111    0.000    0.000    0.000    0.000 space.py:159(__init__)
+       25    0.000    0.000    0.000    0.000 defmatrix.py:279(__array_finalize__)
+        1    0.000    0.000    0.000    0.000 ast.py:30(parse)
+        1    0.000    0.000    0.000    0.000 {built-in method compile}
+       16    0.000    0.000    0.000    0.000 {method '__array_prepare__' of 'numpy.ndarray' objects}
+      500    0.000    0.000    0.000    0.000 lanczos.py:231(<lambda>)
+      128    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:486(_verbose_message)
+        1    0.000    0.000    0.000    0.000 testLanczos.py:35(<listcomp>)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:415(cache_from_source)
+        5    0.000    0.000    0.000    0.000 space.py:174(__rsub__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:593(_requires_builtin_wrapper)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:654(load_module)
+       10    0.000    0.000    0.000    0.000 space.py:356(member)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:108(_path_isfile)
+        1    0.000    0.000    0.000    0.000 {built-in method init_builtin}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:804(_bytes_from_bytecode)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:98(_path_is_mode_type)
+       45    0.000    0.000    0.000    0.000 {built-in method hasattr}
+        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:266(_get_module_lock)
+     10/1    0.000    0.000    0.000    0.000 utils.py:1046(visit)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:796(is_package)
+       16    0.000    0.000    0.000    0.000 {method 'transpose' of 'numpy.ndarray' objects}
+        2    0.000    0.000    0.000    0.000 {method 'read' of '_io.FileIO' objects}
+        1    0.000    0.000    0.000    0.000 utils.py:1055(visitExpression)
+      127    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+       11    0.000    0.000    0.000    0.000 linalg.py:127(_to_native_byte_order)
+        4    0.000    0.000    0.000    0.000 lanczos.py:239(<listcomp>)
+        7    0.000    0.000    0.000    0.000 py3k.py:22(asbytes)
+       11    0.000    0.000    0.000    0.000 linalg.py:157(_assertSquareness)
+        1    0.000    0.000    0.000    0.000 utils.py:1067(visitDict)
+       69    0.000    0.000    0.000    0.000 {built-in method getattr}
+        9    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:86(_path_split)
+        1    0.000    0.000    0.000    0.000 abc.py:132(<setcomp>)
+        5    0.000    0.000    0.000    0.000 defmatrix.py:917(getT)
+        5    0.000    0.000    0.000    0.000 space.py:170(__neg__)
+        1    0.000    0.000    0.000    0.000 numeric.py:323(asanyarray)
+        4    0.000    0.000    0.000    0.000 {method 'read' of '_io.BufferedReader' objects}
+       10    0.000    0.000    0.000    0.000 space.py:345(check_member)
+       22    0.000    0.000    0.000    0.000 linalg.py:84(_realType)
+        5    0.000    0.000    0.000    0.000 space.py:172(__radd__)
+        1    0.000    0.000    0.000    0.000 utils.py:1068(<listcomp>)
+       27    0.000    0.000    0.000    0.000 linalg.py:71(isComplexType)
+        1    0.000    0.000    0.000    0.000 {built-in method open}
+       43    0.000    0.000    0.000    0.000 {built-in method issubclass}
+        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:201(acquire)
+       10    0.000    0.000    0.000    0.000 numpy_space.py:12(check_member)
+        6    0.000    0.000    0.000    0.000 {built-in method print}
+        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:226(release)
+       11    0.000    0.000    0.000    0.000 linalg.py:151(_assertRank2)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1041(path_stats)
+       49    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+       20    0.000    0.000    0.000    0.000 {built-in method max}
+        7    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1596(_handle_fromlist)
+       29    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1261(_path_importer_cache)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1144(is_package)
+        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:181(__init__)
+       10    0.000    0.000    0.000    0.000 {method '__array__' of 'numpy.ndarray' objects}
+       13    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1455(__enter__)
+        1    0.000    0.000    0.000    0.000 space.py:359(lin_op)
+       24    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:643(find_module)
+        2    0.000    0.000    0.000    0.000 {built-in method _fix_co_filename}
+        1    0.000    0.000    0.000    0.000 gzip.py:127(GzipFile)
+        1    0.000    0.000    0.000    0.000 {method 'close' of '_io.BufferedReader' objects}
+       13    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1459(__exit__)
+        1    0.000    0.000    0.000    0.000 utils.py:1071(visitTuple)
+        5    0.000    0.000    0.000    0.000 vector_set.py:45(__delitem__)
+        7    0.000    0.000    0.000    0.000 {method 'encode' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 {built-in method time}
+        1    0.000    0.000    0.000    0.000 space.py:346(check_lin_op)
+        3    0.000    0.000    0.000    0.000 _weakrefset.py:36(__init__)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:61(_r_long)
+       11    0.000    0.000    0.000    0.000 {built-in method min}
+       18    0.000    0.000    0.000    0.000 {built-in method release_lock}
+        1    0.000    0.000    0.000    0.000 numpy_space.py:17(check_lin_op)
+        1    0.000    0.000    0.000    0.000 format.py:173(read_magic)
+        1    0.000    0.000    0.000    0.000 warnings.py:59(simplefilter)
+       25    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:38(_relax_case)
+        5    0.000    0.000    0.000    0.000 {built-in method is_builtin}
+        4    0.000    0.000    0.000    0.000 {method 'rsplit' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:700(find_module)
+        1    0.000    0.000    0.000    0.000 utils.py:1072(<listcomp>)
+        1    0.000    0.000    0.000    0.000 {built-in method unpack}
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1026(get_filename)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:154(new_module)
+       22    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method any}
+       10    0.000    0.000    0.000    0.000 {built-in method allocate_lock}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1013(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'seek' of '_io.BufferedReader' objects}
+        1    0.000    0.000    0.000    0.000 space.py:353(__init__)
+        1    0.000    0.000    0.000    0.000 py3k.py:32(isfileobj)
+        1    0.000    0.000    0.000    0.000 gzip.py:71(_PaddedFile)
+        4    0.000    0.000    0.000    0.000 {built-in method is_frozen}
+        1    0.000    0.000    0.000    0.000 utils.py:1440(__exit__)
+        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:280(cb)
+        4    0.000    0.000    0.000    0.000 {method 'partition' of 'str' objects}
+        6    0.000    0.000    0.000    0.000 linalg.py:90(_linalgRealType)
+        1    0.000    0.000    0.000    0.000 utils.py:1416(__init__)
+        1    0.000    0.000    0.000    0.000 numpy_space.py:68(__init__)
+        1    0.000    0.000    0.000    0.000 space.py:212(__init__)
+        1    0.000    0.000    0.000    0.000 format.py:351(<listcomp>)
+        1    0.000    0.000    0.000    0.000 space.py:288(__init__)
+        4    0.000    0.000    0.000    0.000 utils.py:1061(visitStr)
+       10    0.000    0.000    0.000    0.000 {built-in method get_ident}
+        1    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1147(<genexpr>)
+        1    0.000    0.000    0.000    0.000 utils.py:1424(__enter__)
+        1    0.000    0.000    0.000    0.000 {method 'startswith' of 'bytes' objects}
+        1    0.000    0.000    0.000    0.000 ast.py:260(NodeTransformer)
+        1    0.000    0.000    0.000    0.000 utils.py:1086(visitName)
+        1    0.000    0.000    0.000    0.000 ast.py:223(NodeVisitor)
+        1    0.000    0.000    0.000    0.000 arrayprint.py:37(set_printoptions)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1122(__init__)
+       13    0.000    0.000    0.000    0.000 {built-in method acquire_lock}
+        2    0.000    0.000    0.000    0.000 utils.py:1058(visitNum)
+        1    0.000    0.000    0.000    0.000 numpy_space.py:10(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {method 'keys' of 'dict' objects}
+
+

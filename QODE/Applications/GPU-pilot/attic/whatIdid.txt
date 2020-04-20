@@ -1,0 +1,8 @@
+
+  1007  9:53    python3 debug_Hbuild.py monomer-2-2   4.5
+  1012  9:55    python3 debug_Hbuild.py dimer-2,2-2,2 4.5
+
+  1025	9:23	python3 debug_energy.py monomer-2-2   4.5
+  1026	9:23	python3 debug_energy.py dimer-2,2-2,2 4.5
+  1027	9:23	python3 build_H.py            2,2-2,2 4.5
+

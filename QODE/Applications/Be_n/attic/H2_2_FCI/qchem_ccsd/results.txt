@@ -1,0 +1,22 @@
+#    (C) Copyright 2018 Anthony D. Dutoi
+# 
+#    This file is part of Qode.
+# 
+#    Qode is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+# 
+#    Qode is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+# 
+#    You should have received a copy of the GNU General Public License
+#    along with Qode.  If not, see <http://www.gnu.org/licenses/>.
+#
+H2.out:              -1.14781318                           CCSD T converged.
+H2_2.out:            -2.29569570                           CCSD T converged.
+
+CCSD vdW energy for 2 3-21G H2 molecules (bond dist = 0.74 A), arranged end-to-end with a center-to-center separation of 4 A:
+	-6.934e-05

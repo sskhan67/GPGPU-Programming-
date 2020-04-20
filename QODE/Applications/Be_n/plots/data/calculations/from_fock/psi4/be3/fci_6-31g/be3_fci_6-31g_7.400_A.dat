@@ -1,0 +1,16 @@
+
+memory 10 Gb
+molecule be2 {
+0 1
+Be  0.0  0.0  0.0
+Be  0.0  0.0  7.400 
+Be  0.0  0.0  14.800 
+units angstrom    
+}
+
+set basis 6-31g
+set freeze_core true
+set PRINT_BASIS True
+set PUREAM False
+set E_CONVERGENCE 1e-14
+energy('fci')

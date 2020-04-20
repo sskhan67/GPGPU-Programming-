@@ -1,0 +1,52 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<cuda.h>
+#include<time.h>
+#include<sys/time.h>
+#include<math.h>
+int main(int argc, char ** argv){
+
+
+	float *host, *device; 
+	struct timeval start_timeS,end_timeE;
+	int size;
+	
+//	int a = atof(argv[1]);	
+	int a[]={1,2,4,8,16,32,64,128,256,512,1000,2000,4000,8000,16000,32000,64000,128000,256000,512000};
+	FILE *fp ;
+        fp=fopen("h2d.csv","w+");
+        fprintf(fp,"KB, time, BW");
+
+for (int k=0;k<20;k++)
+{
+	size = a[k]*1024; 
+	host = (float*)malloc(sizeof(float)*size);
+	cudaMalloc((void**)&device,sizeof(float)*size);
+	
+	for (int i = 0; i<size/4;i++){
+		host[i]=rand();
+	}
+
+	
+	gettimeofday(&start_timeS,NULL);
+	for (int i = 0; i<30; i++){
+	cudaMemcpy(device,host,sizeof(float)*size,cudaMemcpyHostToDevice);
+        }
+	gettimeofday(&end_timeE,NULL);
+	
+	cudaDeviceSynchronize();
+
+	float timeM = ((end_timeE.tv_sec*1000000+end_timeE.tv_usec)-(start_timeS.tv_sec*1000000+start_timeS.tv_usec));
+	float t=timeM/(30*1000);// time in ms
+	float BW=a[k]/(t/1000); // time in s -: BW - kbps	
+	printf("KB :%d, time Host to Device: %f ms, BW(kbps): %f \n",a[k],t,BW);
+
+// CSV File writting for Features 
+//	FILE *fp ;
+  //  	fp=fopen("h2d.csv","w+");
+//	fprintf(fp,"KB, time");
+		
+	fprintf(fp,"\n%d, %f, %f\n",a[k],t,BW);
+}
+}

@@ -1,0 +1,295 @@
+
+*** tstart() called on medusa
+*** at Sat Jun 23 22:09:07 2018
+
+   => Loading Basis Set <=
+
+    Name: 6-31G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-2 entry BE         line    53 file /home/boris/miniconda/envs/sss/share/psi4/basis/6-31g.gbs 
+
+    There are an even number of electrons - assuming singlet.
+    Specify the multiplicity in the molecule input block.
+
+
+         ---------------------------------------------------------
+                                   SCF
+            by Justin Turney, Rob Parrish, Andy Simmonett
+                             and Daniel Smith
+                              RHF Reference
+                        1 Threads,    500 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: d2h
+    Full point group: D_inf_h
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+          BE          0.000000000000     0.000000000000    -1.300000000000     9.012182201000
+          BE          0.000000000000     0.000000000000     1.300000000000     9.012182201000
+
+  Running in d2h symmetry.
+
+  Rotational constants: A = ************  B =      0.55341  C =      0.55341 [cm^-1]
+  Rotational constants: A = ************  B =  16590.92241  C =  16590.92241 [MHz]
+  Nuclear repulsion =    3.256475129784615
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 8
+  Nalpha       = 4
+  Nbeta        = 4
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-06
+  Density threshold  = 1.00e-06
+  Integral threshold = 0.00e+00
+
+  ==> Primary Basis <==
+
+  Basis Set: 6-31G
+    Blend: 6-31G
+    Number of shells: 10
+    Number of basis function: 18
+    Number of Cartesian functions: 18
+    Spherical Harmonics?: false
+    Max angular momentum: 1
+
+  ==> Pre-Iterations <==
+
+   -------------------------------------------------------
+    Irrep   Nso     Nmo     Nalpha   Nbeta   Ndocc  Nsocc
+   -------------------------------------------------------
+     Ag         5       5       0       0       0       0
+     B1g        0       0       0       0       0       0
+     B2g        2       2       0       0       0       0
+     B3g        2       2       0       0       0       0
+     Au         0       0       0       0       0       0
+     B1u        5       5       0       0       0       0
+     B2u        2       2       0       0       0       0
+     B3u        2       2       0       0       0       0
+   -------------------------------------------------------
+    Total      18      18       4       4       4       0
+   -------------------------------------------------------
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                   2
+      Number of AO shells:              10
+      Number of primitives:             28
+      Number of atomic orbitals:        18
+      Number of basis functions:        18
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 1
+
+  Performing in-core PK
+  Using 29412 doubles for integral storage.
+  We computed 1539 shell quartets total.
+  Whereas there are 1540 unique shell quartets.
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory (MB):               375
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              1
+  Minimum eigenvalue in the overlap matrix is 2.9500344288E-02.
+  Using Symmetric Orthogonalization.
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF.
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter   0:   -29.22081888683459   -2.92208e+01   3.08498e-02 
+   @RHF iter   1:   -29.12240727232551    9.84116e-02   3.30943e-03 
+   @RHF iter   2:   -29.12418001394131   -1.77274e-03   1.17145e-03 DIIS
+   @RHF iter   3:   -29.12445846835485   -2.78454e-04   3.63214e-04 DIIS
+   @RHF iter   4:   -29.12449072471545   -3.22564e-05   4.35605e-05 DIIS
+   @RHF iter   5:   -29.12449110868793   -3.83972e-07   2.62247e-06 DIIS
+   @RHF iter   6:   -29.12449110956967   -8.81737e-10   3.21839e-07 DIIS
+
+  ==> Post-Iterations <==
+
+    Orbital Energies (a.u.)
+    -----------------------
+
+    Doubly Occupied:                                                      
+
+       1Ag    -4.708469     1B1u   -4.708465     2Ag    -0.375608  
+       2B1u   -0.241450  
+
+    Virtual:                                                              
+
+       3Ag     0.041739     1B2u    0.047411     1B3u    0.047411  
+       1B3g    0.122913     1B2g    0.122913     3B1u    0.222384  
+       4Ag     0.440398     2B2u    0.458452     2B3u    0.458452  
+       4B1u    0.473953     5Ag     0.475293     2B2g    0.483428  
+       2B3g    0.483428     5B1u    0.601501  
+
+    Final Occupation by Irrep:
+             Ag   B1g   B2g   B3g    Au   B1u   B2u   B3u 
+    DOCC [     2,    0,    0,    0,    0,    2,    0,    0 ]
+
+  Energy converged.
+
+  @RHF Final Energy:   -29.12449110956967
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              3.2564751297846146
+    One-Electron Energy =                 -44.6939455726507688
+    Two-Electron Energy =                  12.3129793332964912
+    Total Energy =                        -29.1244911095696679
+
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 Bohr
+
+Properties computed using the SCF density matrix
+
+  Nuclear Dipole Moment: (a.u.)
+     X:     0.0000      Y:     0.0000      Z:     0.0000
+
+  Electronic Dipole Moment: (a.u.)
+     X:     0.0000      Y:     0.0000      Z:     0.0000
+
+  Dipole Moment: (a.u.)
+     X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
+
+  Dipole Moment: (Debye)
+     X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
+
+
+  ==> Molecular Orbitals <==
+
+                            1            2            3            4            5
+
+ 1    BE1 s         0.7056647    0.7057757    0.1503142    0.1581770    0.0319165
+ 2    BE1 s         0.0116824    0.0125354   -0.2195163   -0.2095941    0.0325386
+ 3    BE1 px        0.0000000    0.0000000    0.0000000    0.0000000    0.0000000
+ 4    BE1 py        0.0000000    0.0000000    0.0000000    0.0000000    0.0000000
+ 5    BE1 pz        0.0003038    0.0006365   -0.0789070    0.0556791    0.2596732
+ 6    BE1 s        -0.0036382   -0.0068225   -0.4102885   -0.5912094   -0.3190839
+ 7    BE1 px        0.0000000    0.0000000    0.0000000    0.0000000    0.0000000
+ 8    BE1 py        0.0000000    0.0000000    0.0000000    0.0000000    0.0000000
+ 9    BE1 pz       -0.0002176   -0.0019034   -0.0187421    0.0894602    0.4273389
+ 10   BE2 s         0.7056647   -0.7057757    0.1503142   -0.1581770    0.0319165
+ 11   BE2 s         0.0116824   -0.0125354   -0.2195163    0.2095941    0.0325386
+ 12   BE2 px        0.0000000    0.0000000    0.0000000    0.0000000    0.0000000
+ 13   BE2 py        0.0000000    0.0000000    0.0000000    0.0000000    0.0000000
+ 14   BE2 pz       -0.0003038    0.0006365    0.0789070    0.0556791   -0.2596732
+ 15   BE2 s        -0.0036382    0.0068225   -0.4102885    0.5912094   -0.3190839
+ 16   BE2 px        0.0000000    0.0000000    0.0000000    0.0000000    0.0000000
+ 17   BE2 py        0.0000000    0.0000000    0.0000000    0.0000000    0.0000000
+ 18   BE2 pz        0.0002176   -0.0019034    0.0187421    0.0894602   -0.4273389
+
+            Ene    -4.7084688   -4.7084646   -0.3756081   -0.2414504    0.0417394
+            Sym            Ag          B1u           Ag          B1u           Ag
+            Occ             2            2            2            2            0
+
+
+                            6            7            8            9           10
+
+ 1    BE1 s         0.0000000    0.0000000    0.0000000    0.0000000    0.1047605
+ 2    BE1 s         0.0000000    0.0000000    0.0000000    0.0000000   -0.0982433
+ 3    BE1 px        0.0000000    0.1861772    0.0000000    0.2089182    0.0000000
+ 4    BE1 py        0.1861772    0.0000000    0.2089182    0.0000000    0.0000000
+ 5    BE1 pz        0.0000000    0.0000000    0.0000000    0.0000000   -0.1201626
+ 6    BE1 s         0.0000000    0.0000000    0.0000000    0.0000000   -1.1437121
+ 7    BE1 px        0.0000000    0.4806863    0.0000000    0.6988892    0.0000000
+ 8    BE1 py        0.4806863    0.0000000    0.6988892    0.0000000    0.0000000
+ 9    BE1 pz        0.0000000    0.0000000    0.0000000    0.0000000   -1.4037366
+ 10   BE2 s         0.0000000    0.0000000    0.0000000    0.0000000   -0.1047605
+ 11   BE2 s         0.0000000    0.0000000    0.0000000    0.0000000    0.0982433
+ 12   BE2 px        0.0000000    0.1861772    0.0000000   -0.2089182    0.0000000
+ 13   BE2 py        0.1861772    0.0000000   -0.2089182    0.0000000    0.0000000
+ 14   BE2 pz        0.0000000    0.0000000    0.0000000    0.0000000   -0.1201626
+ 15   BE2 s         0.0000000    0.0000000    0.0000000    0.0000000    1.1437121
+ 16   BE2 px        0.0000000    0.4806863    0.0000000   -0.6988892    0.0000000
+ 17   BE2 py        0.4806863    0.0000000   -0.6988892    0.0000000    0.0000000
+ 18   BE2 pz        0.0000000    0.0000000    0.0000000    0.0000000   -1.4037366
+
+            Ene     0.0474112    0.0474112    0.1229129    0.1229129    0.2223842
+            Sym           B2u          B3u          B3g          B2g          B1u
+            Occ             0            0            0            0            0
+
+
+                           11           12           13           14           15
+
+ 1    BE1 s         0.0025125    0.0000000    0.0000000    0.0190079    0.0259595
+ 2    BE1 s        -1.3022002    0.0000000    0.0000000    0.6324467    0.6585938
+ 3    BE1 px        0.0000000    0.0000000    0.9295095    0.0000000    0.0000000
+ 4    BE1 py        0.0000000    0.9295095    0.0000000    0.0000000    0.0000000
+ 5    BE1 pz        0.3636359    0.0000000    0.0000000   -0.8643640    0.8740939
+ 6    BE1 s         1.1623179    0.0000000    0.0000000   -0.5503449   -0.3986250
+ 7    BE1 px        0.0000000    0.0000000   -0.6758591    0.0000000    0.0000000
+ 8    BE1 py        0.0000000   -0.6758591    0.0000000    0.0000000    0.0000000
+ 9    BE1 pz       -0.3145967    0.0000000    0.0000000    0.6074464   -0.8406230
+ 10   BE2 s         0.0025125    0.0000000    0.0000000   -0.0190079    0.0259595
+ 11   BE2 s        -1.3022002    0.0000000    0.0000000   -0.6324467    0.6585938
+ 12   BE2 px        0.0000000    0.0000000    0.9295095    0.0000000    0.0000000
+ 13   BE2 py        0.0000000    0.9295095    0.0000000    0.0000000    0.0000000
+ 14   BE2 pz       -0.3636359    0.0000000    0.0000000   -0.8643640   -0.8740939
+ 15   BE2 s         1.1623179    0.0000000    0.0000000    0.5503449   -0.3986250
+ 16   BE2 px        0.0000000    0.0000000   -0.6758591    0.0000000    0.0000000
+ 17   BE2 py        0.0000000   -0.6758591    0.0000000    0.0000000    0.0000000
+ 18   BE2 pz        0.3145967    0.0000000    0.0000000    0.6074464    0.8406230
+
+            Ene     0.4403983    0.4584524    0.4584524    0.4739531    0.4752926
+            Sym            Ag          B2u          B3u          B1u           Ag
+            Occ             0            0            0            0            0
+
+
+                          16           17           18
+
+ 1    BE1 s         0.0000000    0.0000000    0.0863220
+ 2    BE1 s         0.0000000    0.0000000    1.6789836
+ 3    BE1 px        0.9512613    0.0000000    0.0000000
+ 4    BE1 py        0.0000000    0.9512613    0.0000000
+ 5    BE1 pz        0.0000000    0.0000000    0.4717115
+ 6    BE1 s         0.0000000    0.0000000   -2.9976635
+ 7    BE1 px       -0.9717418    0.0000000    0.0000000
+ 8    BE1 py        0.0000000   -0.9717418    0.0000000
+ 9    BE1 pz        0.0000000    0.0000000   -1.5787099
+ 10   BE2 s         0.0000000    0.0000000   -0.0863220
+ 11   BE2 s         0.0000000    0.0000000   -1.6789836
+ 12   BE2 px       -0.9512613    0.0000000    0.0000000
+ 13   BE2 py        0.0000000   -0.9512613    0.0000000
+ 14   BE2 pz        0.0000000    0.0000000    0.4717115
+ 15   BE2 s         0.0000000    0.0000000    2.9976635
+ 16   BE2 px        0.9717418    0.0000000    0.0000000
+ 17   BE2 py        0.0000000    0.9717418    0.0000000
+ 18   BE2 pz        0.0000000    0.0000000   -1.5787099
+
+            Ene     0.4834279    0.4834279    0.6015006
+            Sym           B2g          B3g          B1u
+            Occ             0            0            0
+
+
+*** tstop() called on medusa at Sat Jun 23 22:09:07 2018
+Module time:
+	user time   =       0.43 seconds =       0.01 minutes
+	system time =       0.02 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       0.43 seconds =       0.01 minutes
+	system time =       0.02 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes

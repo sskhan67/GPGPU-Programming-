@@ -1,0 +1,35 @@
+memory 24 Gb
+molecule beN {
+0 1
+Be   0.0    0.0 0.0
+Be   4.5    0.0 0.0
+Be   9.0    0.0 0.0
+Be  13.5    0.0 0.0
+Be  18.0    0.0 0.0
+Be  22.5    0.0 0.0
+Be  27.0    0.0 0.0
+Be  31.5    0.0 0.0
+Be  36.0    0.0 0.0
+Be  40.5    0.0 0.0
+Be  45.0    0.0 0.0
+Be  49.5    0.0 0.0
+Be  54.0    0.0 0.0
+Be  58.5    0.0 0.0
+Be  63.0    0.0 0.0
+Be  67.5    0.0 0.0
+Be  72.0    0.0 0.0
+Be  76.5    0.0 0.0
+Be  81.0    0.0 0.0
+Be  85.5    0.0 0.0
+Be  90.0    0.0 0.0
+Be  94.5    0.0 0.0
+Be  99.0    0.0 0.0
+units angstrom    
+}
+
+set basis 6-31g
+set freeze_core true
+set PRINT_BASIS True
+set PUREAM False
+set E_CONVERGENCE 1e-10
+energy('ccsd(t)')

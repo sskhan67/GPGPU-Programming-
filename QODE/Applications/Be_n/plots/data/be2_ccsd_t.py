@@ -1,0 +1,91 @@
+#    (C) Copyright 2018 Anthony D. Dutoi
+# 
+#    This file is part of Qode.
+# 
+#    Qode is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+# 
+#    Qode is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+# 
+#    You should have received a copy of the GNU General Public License
+#    along with Qode.  If not, see <http://www.gnu.org/licenses/>.
+#
+from data.extract import X
+from data import atom
+
+def parse(n, fields):
+	dist   = float(".".join(fields[0].split("_")[1].split(".")[:2]))
+	energy = float(fields[-1])
+	return dist, energy-2*atom.energy
+
+data = X(
+parse,
+"""\
+Be2_3.8.out:      * CCSD(T) total energy                  =  -29.225164257102985
+Be2_3.9.out:      * CCSD(T) total energy                  =  -29.225338825621449
+Be2_4.0.out:      * CCSD(T) total energy                  =  -29.225475107003199
+Be2_4.1.out:      * CCSD(T) total energy                  =  -29.225578756897804
+Be2_4.2.out:      * CCSD(T) total energy                  =  -29.225655030074456
+Be2_4.3.out:      * CCSD(T) total energy                  =  -29.225708671948084
+Be2_4.4.out:      * CCSD(T) total energy                  =  -29.225743874279686
+Be2_4.5.out:      * CCSD(T) total energy                  =  -29.225764275395260
+Be2_4.6.out:      * CCSD(T) total energy                  =  -29.225772989121481
+Be2_4.7.out:      * CCSD(T) total energy                  =  -29.225772649887688
+Be2_4.8.out:      * CCSD(T) total energy                  =  -29.225765465399501
+Be2_4.9.out:      * CCSD(T) total energy                  =  -29.225753269804041
+Be2_5.0.out:      * CCSD(T) total energy                  =  -29.225737574675382
+Be2_5.1.out:      * CCSD(T) total energy                  =  -29.225719614250970
+Be2_5.2.out:      * CCSD(T) total energy                  =  -29.225700385518731
+Be2_5.3.out:      * CCSD(T) total energy                  =  -29.225680682261800
+Be2_5.4.out:      * CCSD(T) total energy                  =  -29.225661124183091
+Be2_5.5.out:      * CCSD(T) total energy                  =  -29.225642182045490
+Be2_5.6.out:      * CCSD(T) total energy                  =  -29.225624199615517
+Be2_5.7.out:      * CCSD(T) total energy                  =  -29.225607412286973
+Be2_5.8.out:      * CCSD(T) total energy                  =  -29.225591966569954
+Be2_5.9.out:      * CCSD(T) total energy                  =  -29.225577933846079
+Be2_6.0.out:      * CCSD(T) total energy                  =  -29.225565327212284
+Be2_6.1.out:      * CCSD(T) total energy                  =  -29.225554113127821
+Be2_6.2.out:      * CCSD(T) total energy                  =  -29.225544224772758
+Be2_6.3.out:      * CCSD(T) total energy                  =  -29.225535571417169
+Be2_6.4.out:      * CCSD(T) total energy                  =  -29.225528048027666
+Be2_6.5.out:      * CCSD(T) total energy                  =  -29.225521542283612
+Be2_6.6.out:      * CCSD(T) total energy                  =  -29.225515940568393
+Be2_6.7.out:      * CCSD(T) total energy                  =  -29.225511132235091
+Be2_6.8.out:      * CCSD(T) total energy                  =  -29.225507012885767
+Be2_6.9.out:      * CCSD(T) total energy                  =  -29.225503486420369
+Be2_7.0.out:      * CCSD(T) total energy                  =  -29.225500466134704
+Be2_7.1.out:      * CCSD(T) total energy                  =  -29.225497875330461
+Be2_7.2.out:      * CCSD(T) total energy                  =  -29.225495647027163
+Be2_7.3.out:      * CCSD(T) total energy                  =  -29.225493723620907
+Be2_7.4.out:      * CCSD(T) total energy                  =  -29.225492056142656
+Be2_7.5.out:      * CCSD(T) total energy                  =  -29.225490603281116
+Be2_7.6.out:      * CCSD(T) total energy                  =  -29.225489330599679
+Be2_7.7.out:      * CCSD(T) total energy                  =  -29.225488209478062
+Be2_7.8.out:      * CCSD(T) total energy                  =  -29.225487216320495
+Be2_7.9.out:      * CCSD(T) total energy                  =  -29.225486331706865
+Be2_8.0.out:      * CCSD(T) total energy                  =  -29.225485539686471
+Be2_8.1.out:      * CCSD(T) total energy                  =  -29.225484827161473
+Be2_8.2.out:      * CCSD(T) total energy                  =  -29.225484183342676
+Be2_8.3.out:      * CCSD(T) total energy                  =  -29.225483599332126
+Be2_8.4.out:      * CCSD(T) total energy                  =  -29.225483067740520
+Be2_8.5.out:      * CCSD(T) total energy                  =  -29.225482582394484
+Be2_8.6.out:      * CCSD(T) total energy                  =  -29.225482138103260
+Be2_8.7.out:      * CCSD(T) total energy                  =  -29.225481730455957
+Be2_8.8.out:      * CCSD(T) total energy                  =  -29.225481355682614
+Be2_8.9.out:      * CCSD(T) total energy                  =  -29.225481010530608
+Be2_9.0.out:      * CCSD(T) total energy                  =  -29.225480692143186
+Be2_9.1.out:      * CCSD(T) total energy                  =  -29.225480398113895
+Be2_9.2.out:      * CCSD(T) total energy                  =  -29.225480126178379
+Be2_9.3.out:      * CCSD(T) total energy                  =  -29.225479874416759
+Be2_9.4.out:      * CCSD(T) total energy                  =  -29.225479641092772
+Be2_9.5.out:      * CCSD(T) total energy                  =  -29.225479424647592
+Be2_9.6.out:      * CCSD(T) total energy                  =  -29.225479223684609
+Be2_9.7.out:      * CCSD(T) total energy                  =  -29.225479036934768
+Be2_9.8.out:      * CCSD(T) total energy                  =  -29.225478863251965
+Be2_9.9.out:      * CCSD(T) total energy                  =  -29.225478701595680
+""")

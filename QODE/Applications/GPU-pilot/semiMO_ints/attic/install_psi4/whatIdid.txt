@@ -1,0 +1,16 @@
+
+  254  cd programs/Qode/Applications/Be_n/density_tensors/data/biorthogonal_dutoi
+  255  mkdir install_psi4
+  256  cd    install_psi4
+
+  257  conda create -n Psi4 psi4 psi4-rt -c psi4/label/dev -c psi4			# -n=--name, -c=--channel
+  265  mkdir -p /morescratch/adutoi/scratch/psi4
+  261  mkdir -p ~/programs/miniconda3/envs/Psi4/etc/conda/activate.d
+  262  mkdir -p ~/programs/miniconda3/envs/Psi4/etc/conda/deactivate.d
+  263  nano     ~/programs/miniconda3/envs/Psi4/etc/conda/activate.d/psi4_vars.sh	# export PSI_SCRATCH=/morescratch/adutoi/scratch/psi4 (and unset PSIDATADIR)
+  264  nano     ~/programs/miniconda3/envs/Psi4/etc/conda/deactivate.d/psi4_vars.sh	# unset PSI_SCRATCH
+
+  276  source activate Psi4
+  280  psi4 --test
+  287  nano He.py		# copy-paste  from  http://www.psicode.org/psi4manual/master/build_planning.html#how-to-run-psi4-as-python-module-after-compilation
+  291  python He.py

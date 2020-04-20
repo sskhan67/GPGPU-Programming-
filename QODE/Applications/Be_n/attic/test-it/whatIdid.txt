@@ -1,0 +1,53 @@
+#    (C) Copyright 2018 Anthony D. Dutoi
+# 
+#    This file is part of Qode.
+# 
+#    Qode is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+# 
+#    Qode is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+# 
+#    You should have received a copy of the GNU General Public License
+#    along with Qode.  If not, see <http://www.gnu.org/licenses/>.
+#
+from Qode/Applications/component_tests/be2_ct_fci/molecule_CI/631g-16-30-30
+	copy    all_Be_FCI_energies.npy    ->    ./Be_631g-16-30-30.npy
+	copy    LMO_ct_fci_H_matrix.npy    ->    ./Be2_631g-16-30-30.npy
+
+from Qode/Applications/component_tests/be2_ct_fci/molecule_CI/631g-16-60-60
+	copy    all_Be_FCI_energies.npy    ->    ./Be_631g-16-60-60.npy
+	copy    LMO_ct_fci_H_matrix.npy    ->    ./Be2_631g-16-60-60.npy
+
+  1119	22:48	python3 H.py Be_631g-16-30-30.npy Be2_631g-16-30-30.npy 16 30 30 1e-3   >& 4.txt
+  1120	22:49	python3 H.py Be_631g-16-30-30.npy Be2_631g-16-30-30.npy 16 30 30 1e-5   >& 15.txt
+  1124	22:50	python3 H.py Be_631g-16-30-30.npy Be2_631g-16-30-30.npy 16 30 30 1e-100 >& 76.txt
+  1126	22:51	python3 H.py Be_631g-16-60-60.npy Be2_631g-16-60-60.npy 16 60 60 1e-6   >& 48.txt
+
+  1133	22:52	python3 ccsd.py 16 30 30 4
+  1134	22:52	mv log.out 4.out
+  1135	22:53	python3 ccsd.py 16 30 30 15
+  1136	22:53	mv log.out 15.out
+  1137	22:53	python3 ccsd.py 16 30 30 76
+  1138	23:06	mv log.out 76.out
+  1139	23:07	python3 ccsd.py 16 60 60 48
+  1140	23:09	mv log.out 48.out
+
+  1142	23:10	grep E_gs           4.txt
+  1143	23:10	grep 'CCSD Energy'  4.out
+  1144	23:11	grep 'FCI Energy'   4.out
+  1145	23:11	grep E_gs          15.txt
+  1146	23:11	grep 'CCSD Energy' 15.out
+  1147	23:11	grep 'FCI Energy'  15.out
+  1148	23:11	grep E_gs          76.txt
+  1149	23:12	grep 'CCSD Energy' 76.out
+  1150	23:12	grep 'FCI Energy'  76.out
+  1151	23:12	grep E_gs          48.txt
+  1152	23:12	grep 'CCSD Energy' 48.out
+  1153	23:12	grep 'FCI Energy'  48.out
+
+

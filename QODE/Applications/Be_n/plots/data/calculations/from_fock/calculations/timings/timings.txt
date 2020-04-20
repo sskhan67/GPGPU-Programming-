@@ -1,0 +1,53 @@
+#    (C) Copyright 2018 Anthony D. Dutoi
+# 
+#    This file is part of Qode.
+# 
+#    Qode is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+# 
+#    Qode is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+# 
+#    You should have received a copy of the GNU General Public License
+#    along with Qode.  If not, see <http://www.gnu.org/licenses/>.
+#
+ccsd_Be2_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 0.11098933219909668
+ccsd_Be3_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 0.2617182731628418
+ccsd_Be4_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 0.4701402187347412
+ccsd_Be5_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 0.6982889175415039
+ccsd_Be6_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 1.1061809062957764
+ccsd_Be7_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 1.4827110767364502
+ccsd_Be8_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 1.920727252960205
+ccsd_Be9_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 2.515831470489502
+ccsd_Be10_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 3.305816411972046
+ccsd_Be11_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 3.6946206092834473
+ccsd_Be12_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 4.420926094055176
+ccsd_Be13_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 5.3177855014801025
+ccsd_Be14_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 6.3198487758636475
+ccsd_Be15_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 7.2650792598724365
+ccsd_Be16_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 8.510588645935059
+ccsd_Be17_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 9.518792152404785
+ccsd_Be18_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 10.794617652893066
+ccsd_Be19_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 12.262269496917725
+ccsd_Be20_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 13.717130899429321
+ccsd_Be21_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 15.403818130493164
+ccsd_Be22_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 16.556407690048218
+ccsd_Be23_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 18.390764474868774
+ccsd_Be24_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 20.69549822807312
+ccsd_Be25_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 22.271392107009888
+ccsd_Be26_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 24.50628685951233
+ccsd_Be27_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 26.316107273101807
+ccsd_Be28_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 28.67814564704895
+ccsd_Be29_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 31.163689374923706
+ccsd_Be30_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 33.45418190956116
+ccsd_Be40_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 64.05067420005798
+ccsd_Be50_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 112.05991959571838
+ccsd_Be60_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 168.23395681381226
+ccsd_Be70_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 251.6945779323578
+ccsd_Be80_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 342.7941653728485
+ccsd_Be90_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 467.77612829208374
+ccsd_Be100_4.5_path=..:..:..:..:dimer_H:6-31g:H:16-115-550:load=H:16-115-550:thresh=1e-6:4.5:u.pickle.log:CCSD Time 633.710376739502

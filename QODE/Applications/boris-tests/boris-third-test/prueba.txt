@@ -1,0 +1,33 @@
+#    (C) Copyright 2018 Anthony D. Dutoi
+# 
+#    This file is part of Qode.
+# 
+#    Qode is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+# 
+#    Qode is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+# 
+#    You should have received a copy of the GNU General Public License
+#    along with Qode.  If not, see <http://www.gnu.org/licenses/>.
+#
+Oscillators:	3		States:		3		Coupling:	0		Lowest	eigenval	Numpy	diagonal:				1.5
+Oscillators:	3		States:		4		Coupling:	0		Lowest	eigenval	Numpy	diagonal:				1.5
+Oscillators:	3		States:		5		Coupling:	0		Lowest	eigenval	Numpy	diagonal:				1.5
+Oscillators:	3		States:		6		Coupling:	0		Lowest	eigenval	Numpy	diagonal:				1.5
+Oscillators:	4		States:		3		Coupling:	0		Lowest	eigenval	Numpy	diagonal:				2.0
+Oscillators:	4		States:		4		Coupling:	0		Lowest	eigenval	Numpy	diagonal:				2.0
+Oscillators:	4		States:		5		Coupling:	0		Lowest	eigenval	Numpy	diagonal:				2.0
+Oscillators:	4		States:		6		Coupling:	0		Lowest	eigenval	Numpy	diagonal:				2.0
+Oscillators:	5		States:		3		Coupling:	0		Lowest	eigenval	Numpy	diagonal:				2.5
+Oscillators:	5		States:		4		Coupling:	0		Lowest	eigenval	Numpy	diagonal:				2.5
+Oscillators:	5		States:		5		Coupling:	0		Lowest	eigenval	Numpy	diagonal:				2.5
+Oscillators:	5		States:		6		Coupling:	0		Lowest	eigenval	Numpy	diagonal:				2.5
+Oscillators:	6		States:		3		Coupling:	0		Lowest	eigenval	Numpy	diagonal:				3.0
+Oscillators:	6		States:		4		Coupling:	0		Lowest	eigenval	Numpy	diagonal:				3.0
+Oscillators:	6		States:		5		Coupling:	0		Lowest	eigenval	Numpy	diagonal:				3.0
+Oscillators:	6		States:		6		Coupling:	0		Lowest	eigenval	Numpy	diagonal:				3.0

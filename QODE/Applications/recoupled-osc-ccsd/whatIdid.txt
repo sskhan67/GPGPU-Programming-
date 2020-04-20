@@ -1,0 +1,28 @@
+#    (C) Copyright 2018 Anthony D. Dutoi
+# 
+#    This file is part of Qode.
+# 
+#    Qode is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+# 
+#    Qode is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+# 
+#    You should have received a copy of the GNU General Public License
+#    along with Qode.  If not, see <http://www.gnu.org/licenses/>.
+#
+python3 ccsd-excitonic.py  5.0 1
+python3 ccsd-excitonic.py 10.0 1
+python3 ccsd-primitive.py  5.0 1
+python3 ccsd-primitive.py 10.0 1
+
+python3 analyze_data.py excitonic_5.0.out
+python3 analyze_data.py excitonic_10.0.out
+python3 analyze_data.py primitive_5.0.out
+python3 analyze_data.py primitive_10.0.out
+
+moved resulting .dat files to folder where paper is being written.

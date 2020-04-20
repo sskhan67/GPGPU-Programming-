@@ -1,0 +1,15 @@
+memory 24 Gb
+molecule be3 {
+0 1
+Be  -5.4    0.0 0.0
+Be   0.0    0.0 0.0
+Be   5.4    0.0 0.0
+units angstrom    
+}
+
+set basis 6-31g
+set freeze_core true
+set PRINT_BASIS True
+set PUREAM False
+set E_CONVERGENCE 1e-14
+energy('ccsd(t)')

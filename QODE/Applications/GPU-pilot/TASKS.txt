@@ -1,0 +1,16 @@
+Implementation 1: cutest_t1.cu -> cudaMalloc and frees just once. Streams used for memcpys. No reduction kernel 
+Implementation 2: Syed builds on cutest_t1.cu --> add  the most optimal reduction. cutest_t2.cu
+
+Implementation 3: Syed converts dimer_00 function to GPU (Thor observes and provides feedback for rapid development)->cutest_t3.cu
+
+Implementation 4: Syed converts dimer_1pls1min function to GPU (Thor observes and provides feedback for rapid development) -> cutest_t4.cu
+
+
+WED: Give an update/code status
+
+FRIDAY's MEETING Syed's tasks: Implementations 3 and 4 ready and speedup numbers. 
+Thor: Explores how to do all of this on 4 available GPUs
+We send Dr. Dutoi an email update
+
+Implementation 5: Add CPU level optimizations on top of Implementation 4 (OpenMP pragmas)
+

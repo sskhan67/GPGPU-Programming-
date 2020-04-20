@@ -1,0 +1,43 @@
+#    (C) Copyright 2018 Anthony D. Dutoi
+# 
+#    This file is part of Qode.
+# 
+#    Qode is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+# 
+#    Qode is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+# 
+#    You should have received a copy of the GNU General Public License
+#    along with Qode.  If not, see <http://www.gnu.org/licenses/>.
+#
+python3 ccsd-excitonic.py 30 >& excitonic.stdout
+rm excitonic.stdout							# because job finished and excitonic.out written
+
+python3 ccsd-primitive.py 30 >& primitive.stdout			# MemoryError  (because I was compiling Q-Chem too?  Another bad DIMM?)
+cp ccsd-primitive.py ccsd-primitive.2.py; p ccsd-primitive.2.py		# cut off beginning jobs and lightened later load
+python3 ccsd-primitive.2.py 30 >& primitive.2.stdout			# Mysterious silent death of job . . . decided to give up
+									# ^^ Above issues resolved the python MemoryError exception is indeed due to running out of memory (not bad memory, whew!).
+									#    In the second case, log files show 'python3 invoked oom-killer', which is an OS-level savior that is called
+									#    when the machine is out of memory ... basically looks like it did not give python a chance to recover, and since
+									#    it seems that the death came from the "outside" then it looked to die silently.
+
+cp primitive.stdout   primitive.1.out
+cp primitive.2.stdout primitive.2.out
+p +29000 primitive.1.out 				# clean up last crashed calc
+p  +9800 primitive.2.out 				# clean up last crashed calc
+cat primitive.1.out primitive.2.out > primitive.out
+rm primitive.1.out primitive.2.out 
+p primitive.out						# completely remove timed-out calcs
+
+python3 analyze_data.py excitonic.out
+python3 analyze_data.py primitive.out
+
+Then ran the files:
+excitonic.dat
+primitive.dat
+through my plotting functions stored with the paper.

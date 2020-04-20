@@ -1,0 +1,181 @@
+#    (C) Copyright 2018 Anthony D. Dutoi
+# 
+#    This file is part of Qode.
+# 
+#    Qode is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+# 
+#    Qode is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+# 
+#    You should have received a copy of the GNU General Public License
+#    along with Qode.  If not, see <http://www.gnu.org/licenses/>.
+#
+Wed May 17 11:52:08 2017    input-output/3-block/timing.pstats
+
+         1219861 function calls (1219027 primitive calls) in 4.520 seconds
+
+   Ordered by: cumulative time, internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      3/1    0.000    0.000    4.520    4.520 {built-in method exec}
+        1    0.000    0.000    4.520    4.520 <string>:1(<module>)
+        1    0.000    0.000    4.520    4.520 testLanczos.py:39(main)
+        5    0.000    0.000    2.890    0.578 linalg.py:1070(eigh)
+        1    0.001    0.001    2.886    2.886 testLanczos.py:20(control)
+       10    2.871    0.287    2.871    0.287 {built-in method dsyevd}
+        1    0.000    0.000    0.824    0.824 testLanczos.py:29(experiment)
+        1    0.001    0.001    0.824    0.824 lanczos.py:190(lowest_eigen)
+        1    0.000    0.000    0.810    0.810 testLanczos.py:8(io_setup)
+        1    0.438    0.438    0.809    0.809 numpy_mat_vec.py:4(random_matrix)
+        4    0.001    0.000    0.766    0.192 lanczos.py:128(projection)
+       68    0.001    0.000    0.760    0.011 lanczos.py:99(_block_iteration)
+      200    0.089    0.000    0.473    0.002 lanczos.py:9(_process_new_vec)
+     7740    0.322    0.000    0.322    0.000 {built-in method dot}
+       68    0.001    0.000    0.286    0.004 space.py:317(act_on_vec_block)
+   500500    0.215    0.000    0.283    0.000 random.py:329(uniform)
+       68    0.000    0.000    0.283    0.004 numpy_space.py:51(act_on_vec_block)
+       68    0.000    0.000    0.283    0.004 numpy_space.py:53(<listcomp>)
+    10360    0.022    0.000    0.165    0.000 space.py:98(__mul__)
+     8940    0.009    0.000    0.110    0.000 space.py:81(__isub__)
+     9040    0.011    0.000    0.107    0.000 space.py:300(add_to)
+7940/7560    0.014    0.000    0.099    0.000 space.py:57(__or__)
+     9040    0.096    0.000    0.096    0.000 numpy_space.py:33(add_to)
+       31    0.091    0.003    0.091    0.003 {built-in method array}
+     9640    0.009    0.000    0.076    0.000 space.py:303(scale)
+     7540    0.014    0.000    0.070    0.000 space.py:291(dot)
+   500500    0.068    0.000    0.068    0.000 {method 'random' of '_random.Random' objects}
+     9380    0.021    0.000    0.068    0.000 space.py:305(copy)
+     9640    0.067    0.000    0.067    0.000 numpy_space.py:37(scale)
+     7540    0.008    0.000    0.053    0.000 numpy_space.py:30(dot)
+     2040    0.004    0.000    0.044    0.000 space.py:108(__rmul__)
+     9380    0.005    0.000    0.034    0.000 numpy_space.py:40(copy)
+       24    0.004    0.000    0.030    0.001 vector_set.py:91(deproject)
+        4    0.000    0.000    0.030    0.007 lanczos.py:234(<listcomp>)
+     9380    0.029    0.000    0.029    0.000 {method 'copy' of 'numpy.ndarray' objects}
+     9014    0.014    0.000    0.029    0.000 abc.py:611(__iter__)
+    47545    0.024    0.000    0.024    0.000 {built-in method isinstance}
+    12221    0.012    0.000    0.021    0.000 vector_set.py:38(__getitem__)
+     9585    0.013    0.000    0.013    0.000 space.py:53(__init__)
+        4    0.000    0.000    0.009    0.002 vector_set.py:98(projection_opr)
+        4    0.001    0.000    0.009    0.002 vector_set.py:78(project)
+       28    0.008    0.000    0.008    0.000 {built-in method zeros}
+        4    0.000    0.000    0.008    0.002 lanczos.py:238(<listcomp>)
+   240/20    0.001    0.000    0.007    0.000 space.py:331(back_act_on_vec)
+     1280    0.001    0.000    0.007    0.000 space.py:68(__iadd__)
+       14    0.005    0.000    0.005    0.000 {method 'astype' of 'numpy.ndarray' objects}
+        9    0.000    0.000    0.005    0.001 linalg.py:139(_fastCopyAndTranspose)
+       13    0.005    0.000    0.005    0.000 {built-in method _fastCopyAndTranspose}
+      420    0.001    0.000    0.005    0.000 space.py:115(__itruediv__)
+     7540    0.005    0.000    0.005    0.000 {method 'conj' of 'numpy.ndarray' objects}
+     1980    0.002    0.000    0.005    0.000 space.py:251(conjugate)
+      420    0.000    0.000    0.004    0.000 space.py:94(__imul__)
+      880    0.001    0.000    0.003    0.000 space.py:246(abs)
+        8    0.000    0.000    0.003    0.000 defmatrix.py:233(__new__)
+       20    0.000    0.000    0.003    0.000 vector_set.py:74(projections)
+       20    0.000    0.000    0.003    0.000 vector_set.py:77(<listcomp>)
+     2140    0.001    0.000    0.002    0.000 field_traits.py:25(conjugate)
+        4    0.000    0.000    0.002    0.001 vector_set.py:53(overlaps)
+     1000    0.001    0.000    0.002    0.000 space.py:63(__ror__)
+      420    0.001    0.000    0.002    0.000 space.py:256(sqrt)
+      200    0.000    0.000    0.002    0.000 abc.py:723(__iadd__)
+      120    0.000    0.000    0.002    0.000 space.py:72(__add__)
+      880    0.001    0.000    0.002    0.000 field_traits.py:15(abs)
+      200    0.000    0.000    0.002    0.000 abc.py:704(extend)
+      200    0.000    0.000    0.001    0.000 abc.py:686(append)
+      420    0.000    0.000    0.001    0.000 field_traits.py:36(sqrt)
+       68    0.000    0.000    0.001    0.000 space.py:330(<listcomp>)
+        4    0.000    0.000    0.001    0.000 linalg.py:404(inv)
+        1    0.000    0.000    0.001    0.001 testLanczos.py:14(<listcomp>)
+  872/640    0.000    0.000    0.001    0.000 {built-in method len}
+        5    0.000    0.000    0.001    0.000 numpy_mat_vec.py:15(basis_vector)
+        5    0.000    0.000    0.001    0.000 numpy_mat_vec.py:12(zero_vector)
+      200    0.000    0.000    0.001    0.000 vector_set.py:49(insert)
+        4    0.000    0.000    0.000    0.000 linalg.py:244(solve)
+        5    0.000    0.000    0.000    0.000 {built-in method sorted}
+      420    0.000    0.000    0.000    0.000 {built-in method sqrt}
+       40    0.000    0.000    0.000    0.000 space.py:77(__radd__)
+      895    0.000    0.000    0.000    0.000 {built-in method abs}
+        8    0.000    0.000    0.000    0.000 defmatrix.py:389(tolist)
+      236    0.000    0.000    0.000    0.000 vector_set.py:47(__len__)
+       97    0.000    0.000    0.000    0.000 vector_set.py:31(__init__)
+        8    0.000    0.000    0.000    0.000 {method 'tolist' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.000    0.000 read_input.py:49(from_file)
+      200    0.000    0.000    0.000    0.000 {method 'insert' of 'list' objects}
+        6    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 {built-in method dgesv}
+        4    0.000    0.000    0.000    0.000 numeric.py:1885(identity)
+       17    0.000    0.000    0.000    0.000 linalg.py:66(_makearray)
+       40    0.000    0.000    0.000    0.000 defmatrix.py:301(__getitem__)
+        8    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x7d7b80}
+        2    0.000    0.000    0.000    0.000 read_input.py:37(from_string)
+       24    0.000    0.000    0.000    0.000 space.py:171(__add__)
+       17    0.000    0.000    0.000    0.000 numeric.py:253(asarray)
+        9    0.000    0.000    0.000    0.000 linalg.py:99(_commonType)
+       28    0.000    0.000    0.000    0.000 space.py:190(__init__)
+       16    0.000    0.000    0.000    0.000 space.py:179(__iadd__)
+        4    0.000    0.000    0.000    0.000 twodim_base.py:169(eye)
+       13    0.000    0.000    0.000    0.000 {method '__array_prepare__' of 'numpy.ndarray' objects}
+       20    0.000    0.000    0.000    0.000 defmatrix.py:279(__array_finalize__)
+       20    0.000    0.000    0.000    0.000 space.py:202(__init__)
+        4    0.000    0.000    0.000    0.000 space.py:174(__rsub__)
+        9    0.000    0.000    0.000    0.000 linalg.py:127(_to_native_byte_order)
+        1    0.000    0.000    0.000    0.000 {built-in method open}
+        5    0.000    0.000    0.000    0.000 py3k.py:22(asbytes)
+       49    0.000    0.000    0.000    0.000 space.py:159(__init__)
+        1    0.000    0.000    0.000    0.000 testLanczos.py:33(<listcomp>)
+       13    0.000    0.000    0.000    0.000 {method 'transpose' of 'numpy.ndarray' objects}
+        6    0.000    0.000    0.000    0.000 {built-in method print}
+        9    0.000    0.000    0.000    0.000 linalg.py:157(_assertSquareness)
+        1    0.000    0.000    0.000    0.000 {method 'read' of '_io.TextIOWrapper' objects}
+      200    0.000    0.000    0.000    0.000 lanczos.py:231(<lambda>)
+       18    0.000    0.000    0.000    0.000 linalg.py:84(_realType)
+        5    0.000    0.000    0.000    0.000 space.py:356(member)
+        1    0.000    0.000    0.000    0.000 space.py:359(lin_op)
+        4    0.000    0.000    0.000    0.000 space.py:172(__radd__)
+        4    0.000    0.000    0.000    0.000 space.py:170(__neg__)
+       22    0.000    0.000    0.000    0.000 linalg.py:71(isComplexType)
+        9    0.000    0.000    0.000    0.000 linalg.py:151(_assertRank2)
+        1    0.000    0.000    0.000    0.000 space.py:346(check_lin_op)
+        1    0.000    0.000    0.000    0.000 random.py:93(seed)
+        4    0.000    0.000    0.000    0.000 space.py:162(__or__)
+        1    0.000    0.000    0.000    0.000 numpy_space.py:17(check_lin_op)
+        4    0.000    0.000    0.000    0.000 defmatrix.py:917(getT)
+        1    0.000    0.000    0.000    0.000 read_input.py:55(from_argv)
+       35    0.000    0.000    0.000    0.000 {built-in method issubclass}
+       16    0.000    0.000    0.000    0.000 {built-in method max}
+        3    0.000    0.000    0.000    0.000 lanczos.py:239(<listcomp>)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1596(_handle_fromlist)
+        5    0.000    0.000    0.000    0.000 space.py:345(check_member)
+       28    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        5    0.000    0.000    0.000    0.000 {method 'encode' of 'str' objects}
+        5    0.000    0.000    0.000    0.000 numpy_space.py:12(check_member)
+        4    0.000    0.000    0.000    0.000 {built-in method time}
+       10    0.000    0.000    0.000    0.000 read_input.py:31(__getattr__)
+        1    0.000    0.000    0.000    0.000 {function Random.seed at 0x7fd93f0d3050}
+        1    0.000    0.000    0.000    0.000 numpy_space.py:68(__init__)
+        8    0.000    0.000    0.000    0.000 {method '__array__' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.000    0.000 space.py:353(__init__)
+       17    0.000    0.000    0.000    0.000 {built-in method getattr}
+        1    0.000    0.000    0.000    0.000 numpy_space.py:10(__init__)
+       13    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        8    0.000    0.000    0.000    0.000 {built-in method hasattr}
+        1    0.000    0.000    0.000    0.000 ascii.py:25(decode)
+        1    0.000    0.000    0.000    0.000 locale.py:574(getpreferredencoding)
+        4    0.000    0.000    0.000    0.000 vector_set.py:45(__delitem__)
+        1    0.000    0.000    0.000    0.000 space.py:212(__init__)
+        1    0.000    0.000    0.000    0.000 space.py:288(__init__)
+        9    0.000    0.000    0.000    0.000 {built-in method min}
+        1    0.000    0.000    0.000    0.000 arrayprint.py:37(set_printoptions)
+        1    0.000    0.000    0.000    0.000 {built-in method ascii_decode}
+        1    0.000    0.000    0.000    0.000 {built-in method nl_langinfo}
+        2    0.000    0.000    0.000    0.000 {built-in method globals}
+        1    0.000    0.000    0.000    0.000 codecs.py:238(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        5    0.000    0.000    0.000    0.000 linalg.py:90(_linalgRealType)
+
+

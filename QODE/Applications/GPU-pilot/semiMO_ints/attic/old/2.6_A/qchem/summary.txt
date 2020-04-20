@@ -1,0 +1,8 @@
+all results are 6-31g HF
+
+ATOM
+-14.5667640331
+
+DIMER (2.6 A)
+ electronic    +  nuclear     =  total
+-32.3809662577 + 3.2564751434 = -29.1244911143

@@ -1,0 +1,36 @@
+#    (C) Copyright 2018 Anthony D. Dutoi
+# 
+#    This file is part of Qode.
+# 
+#    Qode is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+# 
+#    Qode is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+# 
+#    You should have received a copy of the GNU General Public License
+#    along with Qode.  If not, see <http://www.gnu.org/licenses/>.
+#
+#!/bin/env vs #!/usr/bin/env
+
+spaces
+	vector efficiency layer (see bottom of file)
+	field_traits is not expandible ... listen to mp4 file here
+
+lanczos
+	true davidson?
+	report E uncertainty
+
+units module
+
+# efficiency layer for scaling of vectors:
+# another thin wrapper around a vector class which is already suitable for wrapping by the below can be used to keep track of scaling
+# factors "externally".  This means that the implementation of add_to as seen by spaces can make use of that (perhaps factoring out a global factor)
+# to speed up v+=c*w by doing this all in one step internally (externally, it still looks like two steps, but one is cheap).
+#
+# corrolary:  This still would not solve v+=A|w, when A is an operator.  Think about this long enough and you realize I'm reinventing the expressions library
+# that suspends execution until '=' is encountered
